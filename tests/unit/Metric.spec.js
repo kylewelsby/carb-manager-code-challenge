@@ -27,7 +27,7 @@ describe("Metric.vue", () => {
 
     it("displays the SVG icon", () => {
       expect(wrapper.html()).toMatchInlineSnapshot(`
-        <div aria-label="Duration" class="metric"><i class="icon"><svg width="18" height="18" fill="none">
+        <div title="Duration" class="metric"><i class="icon"><svg width="18" height="18" fill="none">
               <path d="M9 16.667A7.667 7.667 0 109 1.333a7.667 7.667 0 000 15.334z" stroke="#6F737A" stroke-width="1.2" stroke-miterlimit="10"></path>
               <path d="M9.333 3.333v6h-4" stroke="#6F737A" stroke-width="1.2" stroke-miterlimit="10"></path>
             </svg></i>
