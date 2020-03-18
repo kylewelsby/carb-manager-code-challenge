@@ -10,9 +10,7 @@ const wrapper = shallowMount(Component, {
 });
 
 describe("Macronutrients.vue", () => {
-  describe("props", () => {
-    it("handles things", () => {
-      expect(wrapper.text()).toMatchInlineSnapshot(`"20g 16g 4g"`);
-    });
+  it("renders grams", () => {
+    expect(wrapper.text()).toMatchInlineSnapshot(`"20g 16g 4g"`);
   });
 });

@@ -49,8 +49,9 @@ export default {
 
 .macronutrient {
   margin-left: var(--dot-size);
-  position: relative;
   font-size: 0.75rem;
+  font-family: var(--font-primary);
+  font-weight: 400;
   display: inline-flex;
   justify-content: center;
   align-items: center;
