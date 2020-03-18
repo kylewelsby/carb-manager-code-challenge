@@ -3,7 +3,8 @@ import Component from "../../src/components/Metric.vue";
 
 const wrapper = shallowMount(Component, {
   propsData: {
-    type: "duration"
+    type: "duration",
+    value: 1440
   }
 });
 
@@ -34,6 +35,33 @@ describe("Metric.vue", () => {
           24 min
         </div>
       `);
+    });
+  });
+
+  describe("type: energy", () => {
+    beforeEach(() => {
+      wrapper.setProps({
+        type: "energy",
+        value: 765
+      });
+    });
+
+    it("displays calories and kilojoules", () => {
+      expect(wrapper.vm.formattedValue).toMatchInlineSnapshot(`"765 Calories"`);
+      wrapper.setProps({
+        type: "energy",
+        value: 1200
+      });
+      expect(wrapper.vm.formattedValue).toMatchInlineSnapshot(
+        `"1,200 Calories"`
+      );
+
+      wrapper.setProps({
+        type: "energy",
+        value: 1200,
+        unit: "kilojoules"
+      });
+      expect(wrapper.vm.formattedValue).toMatchInlineSnapshot(`"1,200 kJ"`);
     });
   });
 });
