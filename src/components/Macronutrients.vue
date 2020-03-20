@@ -55,6 +55,7 @@ export default {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  color: var(--color-text-primary, #393c40);
 }
 
 .carbohydrate::before {
