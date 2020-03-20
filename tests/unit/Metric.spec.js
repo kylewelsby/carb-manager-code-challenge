@@ -61,7 +61,7 @@ describe("Metric.vue", () => {
         value: 1200,
         unit: "kilojoules"
       });
-      expect(wrapper.vm.formattedValue).toMatchInlineSnapshot(`"1,200 kJ"`);
+      expect(wrapper.vm.formattedValue).toMatchInlineSnapshot(`"5,021 kJ"`);
     });
   });
 });

@@ -59,7 +59,7 @@ export const Default = () => ({
             "calories",
             ENERGY_GROUP
           ),
-          value: number("Value", 489, {}, ENERGY_GROUP)
+          value: number("Value (calories)", 489, {}, ENERGY_GROUP)
         }
       ]
     },

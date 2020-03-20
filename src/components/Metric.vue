@@ -51,7 +51,10 @@ const humanizeEnergyI18n = {
 };
 
 const humanizeEnergy = (value, options = {}) => {
-  let formattedNumber = new Intl.NumberFormat().format(value);
+  if (options.unit === "kilojoules") {
+    value = value * 4.184;
+  }
+  let formattedNumber = new Intl.NumberFormat().format(Math.ceil(value));
   let lang = navigator.language.split("-")[0] || "en";
   if (!Object.keys(humanizeEnergyI18n).includes(lang)) {
     lang = "en";
