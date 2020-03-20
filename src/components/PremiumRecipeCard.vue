@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" @click="$emit('click')">
     <div class="hero">
       <div class="pic-wrapper">
         <img class="pic" :src="img" />
@@ -229,11 +229,14 @@ export default {
   margin-top: 0.5625rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .metrics .metric {
-  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.metrics .metric:first-child {
+  margin-left: 0;
 }
 
 .metrics .spacer {

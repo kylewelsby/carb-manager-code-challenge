@@ -38,6 +38,10 @@ export default {
 >>> {
   --dot-size: 0.375rem;
 }
+.macronutrients {
+  display: flex;
+}
+
 .macronutrient::before {
   content: " ";
   background-color: #888;
