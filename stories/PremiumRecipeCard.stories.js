@@ -53,10 +53,8 @@ export const Default = () => ({
           unit: select(
             "Unit",
             {
-              calories: "Calories",
-              joules: "Joules",
-              btu: "British thermal units (BTU)",
-              electronVolt: "Electron volt (eV)"
+              Calories: "calories",
+              Kilojoules: "kilojoules"
             },
             "calories",
             ENERGY_GROUP

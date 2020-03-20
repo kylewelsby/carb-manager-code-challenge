@@ -28,7 +28,7 @@ export default {
   },
   filters: {
     formattedUnit(val) {
-      return val + "g";
+      return new Intl.NumberFormat().format(val) + "g";
     }
   }
 };

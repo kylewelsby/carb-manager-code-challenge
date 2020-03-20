@@ -23,14 +23,6 @@ const shortEnglishHumanizer = humanizeDuration.humanizer({
   }
 });
 
-let json = [
-  { locale: "de", country: "German", string: "Kalorien" },
-  { locale: "en", country: "English", string: "Calories" },
-  { locale: "es", country: "Spanish", string: "Calorías" },
-  { locale: "fr", country: "French", string: "Calories" },
-  { locale: "ja", country: "Japanese", string: "カロリー" },
-  { locale: "zh-CN", country: "Chinese (Simplified)", string: "卡路里" }
-];
 const humanizeEnergyI18n = {
   en: {
     calories: "Calories",
